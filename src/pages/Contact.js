@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import './Contact.css';
 
 const Contact = () => {
@@ -10,6 +10,7 @@ const Contact = () => {
     reset,
     formState: { errors },
   } = useForm();
+
   const [disabled, setDisabled] = useState(false);
   const [alertInfo, setAlertInfo] = useState({
     display: false,
@@ -44,10 +45,10 @@ const Contact = () => {
 
       // Use emailjs to email contact form data
       await emailjs.send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        "service_iz1x5r8",   // Using env variables
+        "template_rd2bc6r",  // Using env variables
         templateParams,
-        import.meta.env.VITE_PUBLIC_KEY
+        "CUk1qvckHREGKQAHL"   // Using env variables
       );
 
       // Display success alert
@@ -71,7 +72,7 @@ const Contact = () => {
           <div className="contactForm">
             <form
               id="contact-form"
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit(onSubmit)}  // Use handleSubmit directly
               noValidate
             >
               {/* Row 1 of form */}
