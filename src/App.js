@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Snowdrop from './pages/Snowdrop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Portfolio' element={<Portfolio />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/About' element={<About />} />
+          <Route path='/Snowdrop' element={<Snowdrop />} />
       </Routes>
       <Footer />
   </Router>
