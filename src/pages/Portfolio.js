@@ -18,13 +18,13 @@ import Portfolio14 from '../squares/huber.png';
 import Portfolio15 from '../squares/photo.png';
 
 const portfolioItems = [
-    { src: Portfolio1, alt: 'Snowdrop Winery', title: 'Snowdrop Winery', link: '/snowdrop' },
-    { src: Portfolio2, alt: 'Rugby Logos', title: 'Rugby Logos', link: '/rugby' },
-    { src: Portfolio3, alt: 'Bane Illustration', title: 'Bane Illustration', link: '/bane' },
-    { src: Portfolio4, alt: 'Goodness Revolution', title: 'Goodness Revolution', link: '/goodness' },
-    { src: Portfolio5, alt: 'School Stuff', title: 'School Stuff', link: '/school' },
-    { src: Portfolio6, alt: 'Videography', title: 'Videography', link: '/video' },
-    { src: Portfolio7, alt: 'AAHMN', title: 'AAHMN', link: '/aahmn' },
+    { src: Portfolio1, alt: 'Snowdrop Winery', title: 'Snowdrop Winery', link: '/Snowdrop' },
+    { src: Portfolio2, alt: 'Rugby Logos', title: 'Logos', link: '/Logo' },
+    { src: Portfolio3, alt: 'Illustrations', title: 'Illustrations', link: '/Illustrations' },
+    { src: Portfolio4, alt: 'Goodness Revolution', title: 'Revolution of Goodness', link: '/Goodness' },
+    { src: Portfolio5, alt: 'School Stuff', title: 'School Projects', link: '/School' },
+    { src: Portfolio6, alt: 'Videography', title: 'Videography', link: '/Video' },
+    { src: Portfolio7, alt: 'AAHMN', title: 'Adopt a Husky MN', link: '/AAHMN' },
     { src: Portfolio8, alt: 'Klondike', title: 'Klondike', link: '/klondike' },
     { src: Portfolio9, alt: 'State Designs', title: 'State Designs', link: '/state' },
     { src: Portfolio10, alt: 'Biology Article', title: 'Biology Article', link: '/article' },
