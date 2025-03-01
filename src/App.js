@@ -14,6 +14,10 @@ import Goodness from './pages/Goodness';
 import School from './pages/School';
 import Video from './pages/Video';
 import AAHMN from './pages/AAHMN';
+import Klondike from './pages/Klondike';
+import State from './pages/State';
+import Biology from './pages/Biology';
+import IIT from './pages/IIT';
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
           <Route path='/School' element={<School />} />
           <Route path='/Video' element={<Video />} />
           <Route path='/AAHMN' element={<AAHMN />} />
+          <Route path='/Klondike' element={<Klondike />} />
+          <Route path='/State' element={<State />} />
+          <Route path='/Biology' element={<Biology />} />
+          <Route path='/IIT' element={<IIT />} />
       </Routes>
       <Footer />
   </Router>
