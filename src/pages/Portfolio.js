@@ -16,6 +16,8 @@ import Portfolio12 from '../squares/foxburrow.png';
 import Portfolio13 from '../squares/million.png';
 import Portfolio14 from '../squares/huber.png';
 import Portfolio15 from '../squares/photo.png';
+import { useEffect } from 'react';
+
 
 const portfolioItems = [
     { src: Portfolio1, alt: 'Snowdrop Winery', title: 'Snowdrop Winery', link: '/Snowdrop' },
@@ -29,13 +31,17 @@ const portfolioItems = [
     { src: Portfolio9, alt: 'State Designs', title: 'State Designs', link: '/State' },
     { src: Portfolio10, alt: 'GVHD Article', title: 'GVHD Article', link: '/Biology' },
     { src: Portfolio11, alt: 'IIT Posters', title: 'IIT Posters', link: '/IIT' },
-    { src: Portfolio12, alt: 'Foxburrow Winery', title: 'Foxburrow Winery', link: '/foxburrow' },
-    { src: Portfolio13, alt: 'A Million Dreams Video', title: 'A Million Dreams Video', link: '/million' },
-    { src: Portfolio14, alt: 'Huber Home Services', title: 'Huber Home Services', link: '/huber' },
-    { src: Portfolio15, alt: 'Photography', title: 'Photography', link: '/photo' },
+    { src: Portfolio12, alt: 'Foxburrow Winery', title: 'Foxburrow Winery', link: '/Fox' },
+    { src: Portfolio13, alt: 'A Million Dreams Video', title: 'A Million Dreams Video', link: '/Million' },
+    { src: Portfolio14, alt: 'Huber Home Services', title: 'Huber Home Services', link: '/Huber' },
+    { src: Portfolio15, alt: 'Photography', title: 'Photography', link: '/PhotoGallery' },
   ];
 
   function Portfolio() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
     return (
       <section id="portfolio">
         <div className="grid-imgs">
@@ -53,6 +59,5 @@ const portfolioItems = [
       </section>
     );
   }
-  
 
 export default Portfolio

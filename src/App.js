@@ -18,6 +18,10 @@ import Klondike from './pages/Klondike';
 import State from './pages/State';
 import Biology from './pages/Biology';
 import IIT from './pages/IIT';
+import Fox from './pages/Fox';
+import Million from './pages/Million';
+import Huber from './pages/Huber';
+import PhotoGallery from './pages/PhotoGallery';
 
 function App() {
   return (
@@ -39,6 +43,10 @@ function App() {
           <Route path='/State' element={<State />} />
           <Route path='/Biology' element={<Biology />} />
           <Route path='/IIT' element={<IIT />} />
+          <Route path='/Fox' element={<Fox />} />
+          <Route path='/Million' element={<Million />} />
+          <Route path='/Huber' element={<Huber />} />
+          <Route path='/PhotoGallery' element={<PhotoGallery />} />
       </Routes>
       <Footer />
   </Router>
